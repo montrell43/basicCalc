@@ -8,30 +8,41 @@
     <script defer src = './main.js'></script>
 </head>
 <body>
-    <div id="calcBody">
+    
+     <input type="checkbox" id="toggle">
+<label for="toggle" class="switch">Light/Dark</label>
+
+    <div id="calcBody" class="light">
         <div id="screen">
-            81
+            0
         </div>
-        <div>
+
+        <div id="operators">
+                <div class="button operator" id="add" value="+">+</div>
+                <div class="button operator" id="subtract" value="-">-</div>
+                <div class="button operator" id="multiply" value="*">x</div>
+                <div class="button operator" id="divide" value="÷">÷</div>
+            </div>   
+
             <button class="ac" id="clear" value="AC">AC</button>
-            <button id="divide" value="/">/</button>
-            <button id="multiply" value="*">*</button>
-            <button id="seven" value="7">7</button>
-            <button id="eight" value="8">8</button>
-            <button class="ac" id="clear" value="AC">AC</button>
-            <button class="ac" id="clear" value="AC">AC</button>
-            <button class="ac" id="clear" value="AC">AC</button>
-            <button class="ac" id="clear" value="AC">AC</button>
-            <button class="ac" id="clear" value="AC">AC</button>
-        </div>
+        
         <div id="buttons">
-            <div id="operators">
-                <div class="button operator">+</div>
-                <div class="button operator">-</div>
-                <div class="button operator">x</div>
-                <div class="button operator">÷</div>
+            <div id="numbers">
+                <div class="btn" value="7">7</div>
+                <div class="btn" value="8">8</div>
+                <div class="btn" value="9">9</div>
+                <div class="btn" value="4">4</div>
+                <div class="btn" value="5">5</div>
+                <div class="btn" value="6">6</div>
+                <div class="btn" value="1">1</div>
+                <div class="btn" value="2">2</div>
+                <div class="btn" value="3">3</div>
+                <div class="btn" value="0">0</div>
+                <div class="btn" value=".">.</div>
+                <div class="equal" value="=">=</div>
             </div>
         </div>
     </div>
+    <!-- <script src="main.js"></script> -->
 </body>
 </html>
